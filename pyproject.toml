@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantlib"
+version = "0.1.0"
+description = "Event-driven backtesting engine"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "yfinance",
+    "statsmodels",
+    "pytest",
+]
