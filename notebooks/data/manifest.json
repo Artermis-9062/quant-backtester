@@ -1,0 +1,7 @@
+{
+  "source": "Yahoo Finance via yfinance, auto_adjust=True",
+  "written": "2026-11-01",
+  "files": {
+    "SPY": "1a233d1a2486b67a0683f3eb1f24459b897a41cc7ca3c74057e540a6a64b3984"
+  }
+}
