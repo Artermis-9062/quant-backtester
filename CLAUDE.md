@@ -12,3 +12,14 @@ branching convention, since it applies here too:
 **After finishing a session:** merge `week-N-session-M` into `week-N` → push `week-N` → create
 `week-N-session-(M+1)` from that updated `week-N` → push it. Branching the next session before
 merging the previous one up causes divergent branches missing each other's work.
+
+**Keep this repo and `quant-project-notes` on the same branch name.** Both repos are tracked
+together, one session at a time: this repo must always be checked out on the **same
+`week-N-session-M` branch** as `quant-project-notes` (the parent directory). Before any edit or
+commit here, check both:
+```bash
+cd .. && git branch --show-current          # quant-project-notes
+cd quant-backtester && git branch --show-current   # this repo
+```
+If they don't match, checkout the lagging one to the other's branch first. Do the merge-upward
+step (session → week → push → branch next session) in **both** repos, not just one.
